@@ -10,4 +10,6 @@ Countries I'd like to visit
 <li>Croatia</li>
 </ul>
 
-<%=image_tag "sky-690293_960_720.jpg" , class: "img-responsive" %>
+<% @travel_pics.each do |pic| %>
+  <%= image_tag pic, class:"img_responsive"%>
+<% end %>

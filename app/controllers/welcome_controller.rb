@@ -1,6 +1,7 @@
 class WelcomeController < ApplicationController
   def index
     @homeland = 'Puerto Rico'
+    @travel_pics = ['budapest.jpg', 'Cambodia.jpg', 'Vietnam.jpg' , 'Thailand.jpg']
   end
 
   def about
@@ -22,4 +23,6 @@ class WelcomeController < ApplicationController
                      "favorite state" => "California", 
                      "flag colors" => ["red", "white", "blue"]}
   end
+
 end
+
